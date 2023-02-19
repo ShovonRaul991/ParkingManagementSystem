@@ -17,14 +17,16 @@ namespace ParkingManagementSystem
         
         public int OAreasCount { get; set; }
 
-        public ParkingArea() 
+        public ParkingArea(int MAreasCount,int NAreasCount, int OAreasCount) 
         {
+            /*
             Console.Write("Enter the M type areas count in Parking: ");
             MAreasCount = Convert.ToInt32.Console.ReadLine();
             Console.Write("Enter the N type areas count in Parking: ");
             MAreasCount = Convert.ToInt32(area2);
             Console.Write("Enter the O type areas count in Parking: ");
             MAreasCount = Convert.ToInt32(area3);
+            */
 
             for(int i =0;i< MAreasCount;i++)
             {
