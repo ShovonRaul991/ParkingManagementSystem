@@ -1,0 +1,319 @@
+Enter the M type areas count in Parking: 3
+Enter the N type areas count in Parking: 2
+Enter the O type areas count in Parking: 3
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+1
+Enter the car Number:
+3033
+Enter the car type:
+M
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+3
+The availibility of parking space:
+Available areas for M: 2
+Available areas for N: 2
+Available areas for O: 3
+1       0       0
+
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+4
+All the created tickets are:
+Ticket Number: 2        Vehicle No: 3033        Slot Number: 1  In Time: 20-02-2023 17:52:33    Out time: 01-01-0001 00:00:00
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+1
+Enter the car Number:
+3034
+Enter the car type:
+N
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+3
+The availibility of parking space:
+Available areas for M: 2
+Available areas for N: 1
+Available areas for O: 3
+1       1       0
+
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+4
+All the created tickets are:
+Ticket Number: 2        Vehicle No: 3033        Slot Number: 1  In Time: 20-02-2023 17:52:33    Out time: 01-01-0001 00:00:00
+Ticket Number: 3        Vehicle No: 3034        Slot Number: 1  In Time: 20-02-2023 17:53:34    Out time: 01-01-0001 00:00:00
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+1
+Enter the car Number:
+3035
+Enter the car type:
+M
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+3
+The availibility of parking space:
+Available areas for M: 1
+Available areas for N: 1
+Available areas for O: 3
+2       1       0
+
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+4
+All the created tickets are:
+Ticket Number: 2        Vehicle No: 3033        Slot Number: 1  In Time: 20-02-2023 17:52:33    Out time: 01-01-0001 00:00:00
+Ticket Number: 3        Vehicle No: 3034        Slot Number: 1  In Time: 20-02-2023 17:53:34    Out time: 01-01-0001 00:00:00
+Ticket Number: 4        Vehicle No: 3035        Slot Number: 2  In Time: 20-02-2023 17:54:25    Out time: 01-01-0001 00:00:00
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+2
+Enter the car Number:
+3033
+Enter the ticket no:
+2
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+3
+The availibility of parking space:
+Available areas for M: 2
+Available areas for N: 1
+Available areas for O: 3
+1       1       0
+
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+4
+All the created tickets are:
+Ticket Number: 2        Vehicle No: 3033        Slot Number: 1  In Time: 20-02-2023 17:52:33    Out time: 20-02-2023 17:56:13
+Ticket Number: 3        Vehicle No: 3034        Slot Number: 1  In Time: 20-02-2023 17:53:34    Out time: 01-01-0001 00:00:00
+Ticket Number: 4        Vehicle No: 3035        Slot Number: 2  In Time: 20-02-2023 17:54:25    Out time: 01-01-0001 00:00:00
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+1
+Enter the car Number:
+5055
+Enter the car type:
+M
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+4
+All the created tickets are:
+Ticket Number: 2        Vehicle No: 3033        Slot Number: 1  In Time: 20-02-2023 17:52:33    Out time: 20-02-2023 17:56:13
+Ticket Number: 3        Vehicle No: 3034        Slot Number: 1  In Time: 20-02-2023 17:53:34    Out time: 01-01-0001 00:00:00
+Ticket Number: 4        Vehicle No: 3035        Slot Number: 2  In Time: 20-02-2023 17:54:25    Out time: 01-01-0001 00:00:00
+Ticket Number: 5        Vehicle No: 5055        Slot Number: 2  In Time: 20-02-2023 17:57:20    Out time: 01-01-0001 00:00:00
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+3
+The availibility of parking space:
+Available areas for M: 1
+Available areas for N: 1
+Available areas for O: 3
+2       1       0
+
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+2
+Enter the car Number:
+3034
+Enter the ticket no:
+3
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+4
+All the created tickets are:
+Ticket Number: 2        Vehicle No: 3033        Slot Number: 1  In Time: 20-02-2023 17:52:33    Out time: 20-02-2023 17:56:13
+Ticket Number: 3        Vehicle No: 3034        Slot Number: 1  In Time: 20-02-2023 17:53:34    Out time: 20-02-2023 18:00:20
+Ticket Number: 4        Vehicle No: 3035        Slot Number: 2  In Time: 20-02-2023 17:54:25    Out time: 01-01-0001 00:00:00
+Ticket Number: 5        Vehicle No: 5055        Slot Number: 2  In Time: 20-02-2023 17:57:20    Out time: 01-01-0001 00:00:00
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+1
+Enter the car Number:
+2001
+Enter the car type:
+N
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+4
+All the created tickets are:
+Ticket Number: 2        Vehicle No: 3033        Slot Number: 1  In Time: 20-02-2023 17:52:33    Out time: 20-02-2023 17:56:13
+Ticket Number: 3        Vehicle No: 3034        Slot Number: 1  In Time: 20-02-2023 17:53:34    Out time: 20-02-2023 18:00:20
+Ticket Number: 4        Vehicle No: 3035        Slot Number: 2  In Time: 20-02-2023 17:54:25    Out time: 01-01-0001 00:00:00
+Ticket Number: 5        Vehicle No: 5055        Slot Number: 2  In Time: 20-02-2023 17:57:20    Out time: 01-01-0001 00:00:00
+Ticket Number: 6        Vehicle No: 2001        Slot Number: 1  In Time: 20-02-2023 18:00:43    Out time: 01-01-0001 00:00:00
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+3
+The availibility of parking space:
+Available areas for M: 1
+Available areas for N: 1
+Available areas for O: 3
+2       1       0
+
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+1
+Enter the car Number:
+1999
+Enter the car type:
+O
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+3
+The availibility of parking space:
+Available areas for M: 1
+Available areas for N: 1
+Available areas for O: 2
+2       1       1
+
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+4
+All the created tickets are:
+Ticket Number: 2        Vehicle No: 3033        Slot Number: 1  In Time: 20-02-2023 17:52:33    Out time: 20-02-2023 17:56:13
+Ticket Number: 3        Vehicle No: 3034        Slot Number: 1  In Time: 20-02-2023 17:53:34    Out time: 20-02-2023 18:00:20
+Ticket Number: 4        Vehicle No: 3035        Slot Number: 2  In Time: 20-02-2023 17:54:25    Out time: 01-01-0001 00:00:00
+Ticket Number: 5        Vehicle No: 5055        Slot Number: 2  In Time: 20-02-2023 17:57:20    Out time: 01-01-0001 00:00:00
+Ticket Number: 6        Vehicle No: 2001        Slot Number: 1  In Time: 20-02-2023 18:00:43    Out time: 01-01-0001 00:00:00
+Ticket Number: 7        Vehicle No: 1999        Slot Number: 1  In Time: 20-02-2023 18:02:52    Out time: 01-01-0001 00:00:00
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+2
+Enter the car Number:
+2001
+Enter the ticket no:
+6
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+4
+All the created tickets are:
+Ticket Number: 2        Vehicle No: 3033        Slot Number: 1  In Time: 20-02-2023 17:52:33    Out time: 20-02-2023 17:56:13
+Ticket Number: 3        Vehicle No: 3034        Slot Number: 1  In Time: 20-02-2023 17:53:34    Out time: 20-02-2023 18:00:20
+Ticket Number: 4        Vehicle No: 3035        Slot Number: 2  In Time: 20-02-2023 17:54:25    Out time: 01-01-0001 00:00:00
+Ticket Number: 5        Vehicle No: 5055        Slot Number: 2  In Time: 20-02-2023 17:57:20    Out time: 01-01-0001 00:00:00
+Ticket Number: 6        Vehicle No: 2001        Slot Number: 1  In Time: 20-02-2023 18:00:43    Out time: 20-02-2023 18:03:25
+Ticket Number: 7        Vehicle No: 1999        Slot Number: 1  In Time: 20-02-2023 18:02:52    Out time: 01-01-0001 00:00:00
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+3
+The availibility of parking space:
+Available areas for M: 1
+Available areas for N: 2
+Available areas for O: 2
+2       0       1
+
+You can perform the following operations:
+1. Park a Car:
+2. Unpark a Car:
+3. Parking Status:
+4. Check Tickets:
+Enter your choice:
+ticketno
