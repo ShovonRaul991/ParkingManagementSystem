@@ -8,12 +8,9 @@ namespace ParkingManagementSystem
 {
     class OArea
     {
-        const double length = 40;
-        const double width = 30;
-
-        public double CalculateArea()
-        {
-            return length * width;
-        }
+        //const double length = 40;
+        //const double width = 30;
+        public bool occupied = false;
+        
     }
 }

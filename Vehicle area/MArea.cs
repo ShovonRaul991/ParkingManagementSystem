@@ -9,13 +9,10 @@ namespace ParkingManagementSystem
     
     class MArea
     {
-        const double length = 20;
-        const double width = 10;
-        
-        public double CalculateArea()
-        {
-            return length* width;
-        }   
+        //const double length = 20;
+        //const double width = 10;
+        public bool occupied = false;
+         
 
     }
 }

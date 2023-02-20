@@ -11,22 +11,18 @@ namespace ParkingManagementSystem
         public List<MArea> mAreas = new();
         public List<NArea> nAreas  = new();
         public List<OArea> oAreas = new();
-
-        public int MAreasCount { get; set; }
-        public int NAreasCount { get; set; }
+        public List<Ticket> ticketList= new();
+        public List<Vehicle> vehicleList= new();
         
-        public int OAreasCount { get; set; }
+
+        //public int MAreasCount { get; set; }
+        //public int NAreasCount { get; set; }
+        
+        //public int OAreasCount { get; set; }
 
         public ParkingArea(int MAreasCount,int NAreasCount, int OAreasCount) 
         {
-            /*
-            Console.Write("Enter the M type areas count in Parking: ");
-            MAreasCount = Convert.ToInt32.Console.ReadLine();
-            Console.Write("Enter the N type areas count in Parking: ");
-            MAreasCount = Convert.ToInt32(area2);
-            Console.Write("Enter the O type areas count in Parking: ");
-            MAreasCount = Convert.ToInt32(area3);
-            */
+            
 
             for(int i =0;i< MAreasCount;i++)
             {
@@ -36,21 +32,17 @@ namespace ParkingManagementSystem
             {
                 nAreas.Add(new NArea());
             }
-            for (int i = 0; i < oAreasCount; i++)
+            for (int i = 0; i < OAreasCount; i++)
             {
                 oAreas.Add(new OArea());
             }
 
-            Console.WriteLine(mAreas.Count);
-            Console.WriteLine(nAreas.Count);
-            Console.WriteLine(oAreas.Count);
+            //Console.WriteLine(mAreas.Count);
+            //Console.WriteLine(nAreas.Count);
+            //Console.WriteLine(oAreas.Count);
+            
+
         }
-
-
-
-        
-
-
         
     }
 }
