@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ParkingManagementSystem
 {
     class ParkingAreaService
@@ -14,65 +15,61 @@ namespace ParkingManagementSystem
         public ParkingArea CurrentArea;
         public ParkingAreaService()
         {
-            Console.Write("Enter the M type areas count in Parking: ");
-            MAreasCount = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the N type areas count in Parking: ");
-            NAreasCount = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the O type areas count in Parking: ");
-            OAreasCount = Convert.ToInt32(Console.ReadLine());
+            MAreasCount = UserInputHandling.UserInput("M type Area: ");
+            NAreasCount = UserInputHandling.UserInput("N Type Area: ");
+            OAreasCount = UserInputHandling.UserInput("O Type Area: ");
             CurrentArea = new(MAreasCount, NAreasCount, OAreasCount);
         }
 
-        public void VehicleEntry(Vehicle car)
+        public bool VehicleEntry(Vehicle car)
         {
             //ticket creation
             DateTime now = DateTime.Now;
-            if (car.type == 'M' && mAreaId!=MAreasCount)
+            if (car.Type == 'M' && mAreaId!=MAreasCount)
             {
                 mAreaId++;
                 CurrentArea.mAreas.Where(c => c.occupied == false).First().occupied = true;
                 CurrentArea.ticketList.Add(new Ticket(car.VehicleNumber, mAreaId,'M') { InTime = now });
+                return true;
             }
-            else if (car.type == 'N' && nAreaId!=NAreasCount)
+            else if (car.Type == 'N' && nAreaId!=NAreasCount)
             {
                 nAreaId++;
                 CurrentArea.nAreas.Where(c => c.occupied == false).First().occupied = true;
                 CurrentArea.ticketList.Add(new Ticket(car.VehicleNumber, nAreaId,'N') { InTime = now });
+                return true;
             }
-            else if (car.type == 'O' && oAreaId!=OAreasCount)
+            else if (car.Type == 'O' && oAreaId!=OAreasCount)
             {
                 oAreaId++;
                 CurrentArea.oAreas.Where(c => c.occupied == false).First().occupied = true;
                 CurrentArea.ticketList.Add(new Ticket(car.VehicleNumber, oAreaId,'O') { InTime = now });
+                return true;
             }
             else
             {
-                Console.WriteLine("No place to park.");
-                //return noTicket;  //all field zero or invalid ticket will be generated
-                
-
+                Console.WriteLine("No place to park or Car type should be \'M\' or \'N\' or \'O\'");
+                return false;
             }
-            //return CurrentArea.ticketList.Last();
-
         }
 
         public void VehicleExit(Vehicle car,Ticket ticket)
         {
             DateTime now = DateTime.Now;
-            if (car.type == 'M')
+            if (car.Type == 'M')
             {
                 mAreaId--;
                 CurrentArea.mAreas.Where(c => c.occupied == true).Last().occupied = false;
                 
                 
             }
-            else if (car.type == 'N')
+            else if (car.Type == 'N')
             {
                 nAreaId--;
                 CurrentArea.nAreas.Where(c => c.occupied == true).Last().occupied = false;
                 
             }
-            else if (car.type == 'O')
+            else if (car.Type == 'O')
             {
                 oAreaId--;
                 CurrentArea.oAreas.Where(c => c.occupied == true).First().occupied = false;

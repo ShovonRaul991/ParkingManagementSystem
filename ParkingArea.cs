@@ -13,12 +13,6 @@ namespace ParkingManagementSystem
         public List<OArea> oAreas = new();
         public List<Ticket> ticketList= new();
         public List<Vehicle> vehicleList= new();
-        
-
-        //public int MAreasCount { get; set; }
-        //public int NAreasCount { get; set; }
-        
-        //public int OAreasCount { get; set; }
 
         public ParkingArea(int MAreasCount,int NAreasCount, int OAreasCount) 
         {
@@ -36,11 +30,6 @@ namespace ParkingManagementSystem
             {
                 oAreas.Add(new OArea());
             }
-
-            //Console.WriteLine(mAreas.Count);
-            //Console.WriteLine(nAreas.Count);
-            //Console.WriteLine(oAreas.Count);
-            
 
         }
         
