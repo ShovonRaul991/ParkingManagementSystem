@@ -10,7 +10,11 @@ namespace ParkingManagementSystem
         {
             //Console.WriteLine("Hello WOrld");
             ParkingAreaService areaService = new();
-
+            if(areaService.MAreasCount==0 && areaService.NAreasCount==0 && areaService.OAreasCount==0 )
+            {
+                Console.WriteLine("No space available");
+                return;
+            }
             do
             {
                 Console.WriteLine("You can perform the following operations: ");
@@ -19,17 +23,17 @@ namespace ParkingManagementSystem
                 Console.WriteLine("3. Parking Status: ");
                 Console.WriteLine("4. Check Tickets: ");
 
-                Console.WriteLine("Enter your choice: ");
-                int UserChoice = Convert.ToInt32(Console.ReadLine());
+                //Console.WriteLine("Enter your choice: ");
+                int UserChoice = UserInputHandling.UserInput("Choice type: ");
                 switch(UserChoice)
                 {
                     case 1:
-                        var carNumber1 = UserInputHandling.UserInput("Car: ");
+                        var carNumberParked = UserInputHandling.UserInput("Car: ");
                         Console.WriteLine("Enter the car type: ");
                         try
                         {
                             var carType = Convert.ToChar(Console.ReadLine());
-                            Vehicle tempV = new(carNumber1, carType);
+                            Vehicle tempV = new(carNumberParked, carType);
                             if (areaService.VehicleEntry(tempV))
                             {
                                 areaService.CurrentArea.vehicleList.Add(tempV);
@@ -43,11 +47,11 @@ namespace ParkingManagementSystem
                         break;
 
                     case 2:
-                        var carNumber2 = UserInputHandling.UserInput("Car: ");
+                        var carNumberUnparked = UserInputHandling.UserInput("Car: ");
                         var ticketno = UserInputHandling.UserInput("Ticket: ");
                         try
                         {
-                            var car = areaService.CurrentArea.vehicleList.Where(c => c.VehicleNumber == carNumber2);
+                            var car = areaService.CurrentArea.vehicleList.Where(c => c.VehicleNumber == carNumberUnparked);
                             var ticket = areaService.CurrentArea.ticketList.Where(c => c.ticketNo == ticketno);
                             areaService.VehicleExit(car.First(), ticket.First());
                                 

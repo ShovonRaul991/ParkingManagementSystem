@@ -9,7 +9,7 @@ namespace ParkingManagementSystem
 {
     class ParkingAreaService
     {
-        int MAreasCount, NAreasCount, OAreasCount;
+        public int MAreasCount, NAreasCount, OAreasCount;
         static int mAreaId = 0, nAreaId = 0, oAreaId = 0;
         //Ticket noTicket = new(0, 0) {ticketNo=0 };
         public ParkingArea CurrentArea;
@@ -18,28 +18,36 @@ namespace ParkingManagementSystem
             MAreasCount = UserInputHandling.UserInput("M type Area: ");
             NAreasCount = UserInputHandling.UserInput("N Type Area: ");
             OAreasCount = UserInputHandling.UserInput("O Type Area: ");
+
             CurrentArea = new(MAreasCount, NAreasCount, OAreasCount);
+
         }
 
         public bool VehicleEntry(Vehicle car)
         {
+            bool carHas = CurrentArea.ticketList.Any(c=>c.VehicleNumber== car.VehicleNumber);
+            if (carHas)
+            {
+                Console.WriteLine("Car is already present.");
+                return false;
+            }
             //ticket creation
             DateTime now = DateTime.Now;
-            if (car.Type == 'M' && mAreaId!=MAreasCount)
+            if (car.Type == 'M' && mAreaId<MAreasCount)
             {
                 mAreaId++;
                 CurrentArea.mAreas.Where(c => c.occupied == false).First().occupied = true;
                 CurrentArea.ticketList.Add(new Ticket(car.VehicleNumber, mAreaId,'M') { InTime = now });
                 return true;
             }
-            else if (car.Type == 'N' && nAreaId!=NAreasCount)
+            else if (car.Type == 'N' && nAreaId<NAreasCount)
             {
                 nAreaId++;
                 CurrentArea.nAreas.Where(c => c.occupied == false).First().occupied = true;
                 CurrentArea.ticketList.Add(new Ticket(car.VehicleNumber, nAreaId,'N') { InTime = now });
                 return true;
             }
-            else if (car.Type == 'O' && oAreaId!=OAreasCount)
+            else if (car.Type == 'O' && oAreaId<OAreasCount)
             {
                 oAreaId++;
                 CurrentArea.oAreas.Where(c => c.occupied == false).First().occupied = true;

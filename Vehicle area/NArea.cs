@@ -11,6 +11,7 @@ namespace ParkingManagementSystem
         //const double length = 30;
         //const double width = 20;
         public bool occupied = false;
-        
+        public int wheel = 4;
+
     }
 }
